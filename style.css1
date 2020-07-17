@@ -3,9 +3,18 @@ body
 {
 	margin: 0;
 	padding: 0;
-	background-image: url("https://c4.wallpaperflare.com/wallpaper/485/786/386/greens-background-book-page-wallpaper-preview.jpg");
-	background-position: center;
-    height: 100vh;
+	background-image: url("https://shotstash.com/wp-content/uploads/2018/11/computer-notepad-1100x733.jpg");
+	background-size:cover;
+    background-attachment: fixed;
+    border-radius: 10px;
+}
+.container
+{
+    background: white;
+    width: 50%;
+    padding: 40px;
+    margin: 100px auto;
+    font-family: calibry;
 }
 
 .container.profileBx
