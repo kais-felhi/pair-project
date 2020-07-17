@@ -1,0 +1,33 @@
+	
+body
+{
+	margin: 0;
+	padding: 0;
+	background-image: url("https://c4.wallpaperflare.com/wallpaper/485/786/386/greens-background-book-page-wallpaper-preview.jpg");
+	background-position: center;
+    height: 100vh;
+}
+
+.container.profileBx
+ {
+ 	display: inline-block;
+    position: relative;
+
+ }
+ .container.profileBx.text
+ {
+ 	background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    font-family: Georgia;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 30%;
+    color: white;
+    width: 70%;
+ }
+
+
+

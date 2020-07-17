@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RBK Profile</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" ></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="login-page"></div>
+	<div class="form">
+		<form class="register">
+			<input type="text" name="Name">
+			<input type="text" name="Password">
+			<input type="text" name="Email">
+			<button>create</button>
+			<p class="message">Already Registred?><a href="#">Login</a></p>
+		</form>
+		<form class="Login-form">
+			<input id="username" type="text" placeholder="user name">
+			<input id="password" type="password" placeholder="password">
+			<button onclick="getInfo()"><a href="profile.html">login</a></button>
+			<p class="message">Not Registred?<a href="#">Register</a></p>
+		</form>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" ></script>
+	<script>
+		$(".message a").click(function(){
+			$("form").animate({height:"toggle", opacity:"toggle"}, "slow");
+		});
+	</script>
+	<script>
+		var people = [
+		{
+			username: "bestPairs",
+			password: "welldone12"
+		},
+		{
+			username: "bestFreinds",
+			password: "welldone12"
+
+		}
+		]
+		function getInfo(){
+			for(var i =0; i<people.length; i++){
+				if(username === people[i].username && password === people[i].password){
+					return 'your' + username + 'and your' + password
+				}
+			}
+			alert("your username || password incorrect! Please try again")
+		}
+	</script>
+	
+
+</body>
+</html>
